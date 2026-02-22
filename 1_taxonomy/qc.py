@@ -41,8 +41,8 @@ data = pg.aggregate_matrices(csv_file=csv_manifest, attributes=list_attributes, 
 pg.identify_robust_genes(data, percent_cells=percent_cells)
 
 ### 3. Feature Selection (Filtering)
-# Remove features that are not robust OR are not protein-coding (if applicable)
-# Keeps the dataset clean and focused on informative genes
+# Keep only genes flagged as robust (see pg.identify_robust_genes above)
+# This helps keep the dataset clean and focused on informative genes
 data._inplace_subset_var(data.var['robust'])
 
 ### 4. Quality Control (QC)
