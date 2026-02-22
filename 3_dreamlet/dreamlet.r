@@ -22,7 +22,7 @@ prefix = 'example_run'
 
 ### Model Definition
 # Define the mixed-effects model for differential expression
-# - log(n_counts): Correct for sequencing depth (fixed effect)
+# - log(n_counts): Covariate to correct for sequencing depth (normalization)
 # - (1|batch): Random effect to capture batch-to-batch variability
 # - scale(age): Standardized age (fixed effect)
 # - (1|sex) + (1|ancestry): Random effects for demographics
