@@ -18,8 +18,8 @@ import h5py
 
 ### Analysis Parameters
 csv_manifest = '/path/to/manifest.csv'  # Path to the sample metadata/manifest file
-list_attributes = ['Donor','Source','Type','Inhibitors','Sequencing'] # Columns from manifest to include in AnnData.obs
-genome = 'GRCh38'                       # Reference genome (e.g., 'GRCh38', 'mm10')
+list_attributes = ['Donor','Source','Type','Inhibitors','Sequencing']  # Columns from manifest to include in AnnData.obs
+genome = 'GRCh38'  # Reference genome (e.g., 'GRCh38', 'mm10')
 
 # Quality Control Thresholds
 n_genes_lower = 500       # Remove cells with < 500 genes detected
