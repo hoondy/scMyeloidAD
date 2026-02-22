@@ -52,7 +52,7 @@ npc = data.uns["pca_ncomps"]
 # Regress out technical covariates that might drive unwanted variation
 # - n_counts: Sequencing depth
 # - percent_mito: Cell stress/quality (mitochondrial content)
-# - cycle_diff: Cell cycle phase effects (G2M vs S score)
+# - cycle_diff: Difference between G2M and S phase scores (G2M_score - S_score), capturing cell cycle phase effects independent of overall proliferative state
 pg.regress_out(data, attrs=['n_counts','percent_mito','cycle_diff'])
 
 # Run Harmony to integrate data across batches defined by 'batch_key'
