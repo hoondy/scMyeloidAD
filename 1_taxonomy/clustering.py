@@ -36,7 +36,7 @@ data = pg.read_input(prefix+'_qc_norm.h5ad')
 data._inplace_subset_var(data.var['robust'])
 
 # Select Highly Variable Features (HVF) to drive the downstream analysis
-# robust_protein_coding=True ensures we focus on biologically relevant coding genes, ignoring noise
+# robust_protein_coding=True restricts HVG selection to robust protein-coding genes (rather than including non-coding genes)
 pge.scanpy_hvf(data, flavor=flavor, batch_key=batch_key, n_top_genes=n_top_genes, robust_protein_coding=True)
 
 ### 3. Dimensionality Reduction & Integration
