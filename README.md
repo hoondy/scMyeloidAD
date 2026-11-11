@@ -11,7 +11,8 @@ scMyeloidAD
 ├──4_pseudotime: analysis on disease trajectory
 ├──5_GRN: gene regulatory network inference
 ├──6_CCI: cell-to-cell interaction analysis
-└──7_heritability: heritability analysis
+├──7_heritability: heritability analysis
+└──8_application: annotation of 13 myeloid subtypes with 100 weighted markers
 ```
 
 # System requirements
