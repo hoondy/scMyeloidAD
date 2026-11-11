@@ -61,8 +61,8 @@ For more information about the installation, demo workflow, and use cases of Dre
 Supplementary data and tables are available at [https://www.synapse.org/#!Synapse:syn52795287/wiki/624275](https://www.synapse.org/#!Synapse:syn52795287)
 
 # Citation
-Plasticity of Human Microglia and Brain Perivascular Macrophages in Aging and Alzheimer’s Disease
-Lee et. al. medRxiv 2023.10.25.23297558; doi: https://doi.org/10.1101/2023.10.25.23297558
+Lee et al. Plasticity of human microglia and brain perivascular macrophages in aging and Alzheimer’s disease.
+Nature Genetics, 58 (9), 2152-2163, 2026. doi: https://doi.org/10.1038/s41588-026-02716-6
 
 # License
 MIT License
